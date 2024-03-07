@@ -1,0 +1,28 @@
+{
+  "manifest_version": 3,
+  "name": "Gmail Copy Link to Email",
+  "short_name": "Gmail Link to Email",
+  "description": "Adds a 'Copy Link' button to Gmail messages which generates a direct link back to the email.",
+  "version": "0.0.2",
+  "author": "Matt Mueller <mattmuelle@gmail.com>",
+  "content_scripts": [
+    {
+      "matches": [
+        "https://mail.google.com/*"
+      ],
+      "js": [
+        "content.js"
+      ],
+      "run_at": "document_end"
+    }
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "permissions": [
+    "scripting"
+  ],
+  "host_permissions": [
+    "https://mail.google.com/"
+  ]
+}
