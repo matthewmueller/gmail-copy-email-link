@@ -9,7 +9,9 @@ const writeClipboard = (str) => {
   document.body.removeChild(copyFrom);
 }
 
-InboxSDK.load(2, "sdk_copylinktoemail_ddb5ab4bf2").then((sdk) => {
+const appId = "sdk_copylinktoemail_ddb5ab4bf2"
+
+InboxSDK.load(2, appId).then((sdk) => {
 
   // Find the index of the currently logged in user
   var userNumber = 0;
