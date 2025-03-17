@@ -27,10 +27,11 @@ InboxSDK.load(2, appId).then((sdk) => {
       title: 'Copy Link',
       iconUrl: "//ssl.gstatic.com/ui/v1/icons/mail/gm3/2x/link_baseline_nv700_20dp.png",
       onClick: function () {
+        const userEmail = sdk.User.getEmailAddress();
         messageView.getMessageIDAsync().then(messageID => {
-          writeClipboard(`https://mail.google.com/mail/#all/${messageID}`)
-          sdk.ButterBar.showMessage({ text: "Saved to clipboard" })
-        })
+          writeClipboard(`https://mail.google.com/mail/u/${userEmail}/#all/${messageID}`);
+          sdk.ButterBar.showMessage({ text: "Saved to clipboard" });
+        });
       },
       orderHint: 0
     });
