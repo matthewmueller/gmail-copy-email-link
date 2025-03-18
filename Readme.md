@@ -27,6 +27,6 @@ Typical flow is:
 ## Publishing
 
 1. Follow [this document](https://developer.chrome.com/docs/webstore/publish) for how to Publish in the Chrome Web Store
-2. Bump the version in `./static/manifest.json`
+2. Bump the version in [./static/manifest.json](./static/manifest.json)
 3. Run `npm run build`
-4. Upload `dist.zip` file to Chrome Web Store
+4. Upload `dist.zip` file to [Chrome Web Store](https://chrome.google.com/webstore/devconsole/259626af-533e-49d5-92d9-7333f6b10364/eacjcbfhakpkfabohdjfcefjfcfhpdao/edit/package)

@@ -3,7 +3,7 @@
   "name": "Gmail Copy Link to Email",
   "short_name": "Gmail Link to Email",
   "description": "Adds a 'Copy Link' button to Gmail messages which generates a direct link back to the email.",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "author": "Matt Mueller <mattmuelle@gmail.com>",
   "content_scripts": [
     {
